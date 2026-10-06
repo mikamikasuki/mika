@@ -5,12 +5,15 @@
     <filter id="cloud-shadow" x="-25%" y="-35%" width="150%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#06050b" flood-opacity=".45" /></filter>
   </defs>
   <g transform="translate(26 39)" shape-rendering="crispEdges" filter="url(#cloud-shadow)">
-    <path fill="#9a87dc" d="M9 42H3V30H9V24H18V15H30V9H45V3H72V9H87V15H99V24H108V30H117V42H111V51H15V45H9Z" />
-    <path fill="#bca9ed" d="M15 39H12V30H21V21H33V15H48V9H69V15H84V21H96V30H105V39H99V45H18V42H15Z" />
-    <path fill="#2b2337" d="M21 36H18V30H27V24H39V18H51V15H69V18H81V24H93V30H99V36H93V42H24V39H21Z" />
-    <rect x="48" y="24" width="24" height="3" fill="#604d78" />
-    <rect x="-6" y="48" width="4" height="4" fill="#d3a6da" opacity=".7" />
-    <rect x="122" y="42" width="3" height="3" fill="#f0a9cf" opacity=".7" />
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;4 -6;0 0" dur="6.8s" repeatCount="indefinite" />
+      <path fill="#9a87dc" d="M9 42H3V30H9V24H18V15H30V9H45V3H72V9H87V15H99V24H108V30H117V42H111V51H15V45H9Z" />
+      <path fill="#bca9ed" d="M15 39H12V30H21V21H33V15H48V9H69V15H84V21H96V30H105V39H99V45H18V42H15Z" />
+      <path fill="#2b2337" d="M21 36H18V30H27V24H39V18H51V15H69V18H81V24H93V30H99V36H93V42H24V39H21Z" />
+      <rect x="48" y="24" width="24" height="3" fill="#604d78" />
+      <rect x="-6" y="48" width="4" height="4" fill="#d3a6da" opacity=".7" />
+      <rect x="122" y="42" width="3" height="3" fill="#f0a9cf" opacity=".7" />
+    </g>
   </g>
   <g fill="#d0b3ef" opacity=".75" shape-rendering="crispEdges">
     <rect x="174" y="34" width="4" height="4" /><rect x="1031" y="111" width="3" height="3" />
@@ -21,10 +24,13 @@
     <text x="625" y="138" fill="#eea8cd" font-size="18">I hope to use both my technical skills and my token budget to give back to the open-source community. ♡</text>
   </g>
   <g transform="translate(1104 91) scale(.77)" shape-rendering="crispEdges" filter="url(#cloud-shadow)">
-    <path fill="#9f8bdf" d="M9 42H3V30H9V24H18V15H30V9H45V3H72V9H87V15H99V24H108V30H117V42H111V51H15V45H9Z" />
-    <path fill="#c4b0ef" d="M15 39H12V30H21V21H33V15H48V9H69V15H84V21H96V30H105V39H99V45H18V42H15Z" />
-    <path fill="#2b2337" d="M21 36H18V30H27V24H39V18H51V15H69V18H81V24H93V30H99V36H93V42H24V39H21Z" />
-    <rect x="48" y="24" width="24" height="3" fill="#604d78" />
-    <rect x="122" y="42" width="3" height="3" fill="#f0a9cf" opacity=".7" />
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-4 5;0 0" dur="8.2s" repeatCount="indefinite" />
+      <path fill="#9f8bdf" d="M9 42H3V30H9V24H18V15H30V9H45V3H72V9H87V15H99V24H108V30H117V42H111V51H15V45H9Z" />
+      <path fill="#c4b0ef" d="M15 39H12V30H21V21H33V15H48V9H69V15H84V21H96V30H105V39H99V45H18V42H15Z" />
+      <path fill="#2b2337" d="M21 36H18V30H27V24H39V18H51V15H69V18H81V24H93V30H99V36H93V42H24V39H21Z" />
+      <rect x="48" y="24" width="24" height="3" fill="#604d78" />
+      <rect x="122" y="42" width="3" height="3" fill="#f0a9cf" opacity=".7" />
+    </g>
   </g>
 </svg>

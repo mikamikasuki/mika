@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="title desc">
   <title id="title">Hi, I’m Mika</title>
-  <desc id="desc">A lavender and pink banner with a softly glowing greeting and drifting waves.</desc>
+  <desc id="desc">A lavender and pink banner with a softly glowing typewriter greeting, drifting clouds, and waves.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#91a6e6" />
@@ -17,6 +17,13 @@
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
     <clipPath id="banner-clip"><rect width="1200" height="170" rx="28" /></clipPath>
+    <clipPath id="typing-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="426" y="48" width="0" height="72">
+        <animate attributeName="width" dur="7.2s" repeatCount="indefinite" calcMode="discrete"
+          values="0;28;48;62;75;87;104;120;134;174;190;220;248;262;348;348;0;0"
+          keyTimes="0;.04;.08;.12;.16;.20;.24;.28;.32;.36;.40;.44;.48;.52;.56;.70;.82;1" />
+      </rect>
+    </clipPath>
   </defs>
   <g clip-path="url(#banner-clip)">
     <rect width="1200" height="170" fill="url(#sky)" />
@@ -26,6 +33,16 @@
     <circle cx="1010" cy="35" r="92" fill="#f8dfff" opacity=".08">
       <animate attributeName="cx" values="970;1030;970" dur="9s" repeatCount="indefinite" />
     </circle>
+    <g fill="#fff" opacity=".12">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-18 0;22 -4;-18 0" dur="24s" repeatCount="indefinite" />
+        <ellipse cx="316" cy="62" rx="44" ry="10" /><circle cx="290" cy="57" r="12" /><circle cx="321" cy="52" r="17" /><circle cx="346" cy="58" r="11" />
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="16 0;-22 3;16 0" dur="29s" repeatCount="indefinite" />
+        <ellipse cx="863" cy="91" rx="57" ry="11" /><circle cx="830" cy="86" r="13" /><circle cx="862" cy="80" r="18" /><circle cx="895" cy="87" r="12" />
+      </g>
+    </g>
     <path d="M-40 116 C145 94 322 150 522 118 S915 87 1240 119 V182 H-40Z" fill="#e0c6f3" opacity=".30">
       <animateTransform attributeName="transform" type="translate" values="-20 0;20 0;-20 0" dur="11s" repeatCount="indefinite" />
     </path>
@@ -36,6 +53,14 @@
       <circle cx="105" cy="44" r="2.5"><animate attributeName="opacity" values=".2;.9;.2" dur="2.8s" repeatCount="indefinite" /></circle>
       <circle cx="1090" cy="60" r="3"><animate attributeName="opacity" values=".2;.9;.2" dur="3.4s" repeatCount="indefinite" /></circle>
     </g>
-    <text x="600" y="100" text-anchor="middle" fill="#fff" filter="url(#glow)" font-family="ui-rounded,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="46" font-weight="800">Hi, I’m Mika <tspan font-size="39">🌷</tspan></text>
+    <g clip-path="url(#typing-clip)">
+      <text x="600" y="100" text-anchor="middle" textLength="348" lengthAdjust="spacingAndGlyphs" fill="#fff" filter="url(#glow)" font-family="ui-rounded,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="46" font-weight="800">Hi, I’m Mika <tspan font-size="39">🌷</tspan></text>
+    </g>
+    <rect x="426" y="58" width="3" height="46" rx="1.5" fill="#fff" filter="url(#glow)">
+      <animate attributeName="x" dur="7.2s" repeatCount="indefinite" calcMode="discrete"
+        values="426;454;474;488;501;513;530;546;560;600;616;646;674;688;774;774;426;426"
+        keyTimes="0;.04;.08;.12;.16;.20;.24;.28;.32;.36;.40;.44;.48;.52;.56;.70;.82;1" />
+      <animate attributeName="opacity" values="1;1;.15;1" dur=".9s" repeatCount="indefinite" />
+    </rect>
   </g>
 </svg>

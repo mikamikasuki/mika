@@ -201,4 +201,11 @@
   };
 
   loadMap();
+
+  const params = new URLSearchParams(window.location.search);
+  const sharedState = params.get('state')?.toUpperCase();
+  const sharedPhoto = Number.parseInt(params.get('photo') || '0', 10);
+  if (travelData[sharedState]?.memories?.length) {
+    openGallery(sharedState, Number.isFinite(sharedPhoto) ? sharedPhoto : 0, null);
+  }
 })();

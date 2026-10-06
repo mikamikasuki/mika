@@ -10,7 +10,7 @@ const require = createRequire(import.meta.url);
 const topologyPath = require.resolve('us-atlas/states-albers-10m.json');
 const topology = JSON.parse(await readFile(topologyPath, 'utf8'));
 const collection = feature(topology, topology.objects.states);
-const projection = geoIdentity().reflectY(true).fitExtent([[22, 18], [938, 582]], collection);
+const projection = geoIdentity().fitExtent([[22, 18], [938, 582]], collection);
 const pathFor = geoPath(projection);
 
 const fipsToCode = {

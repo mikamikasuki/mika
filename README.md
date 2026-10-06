@@ -20,6 +20,27 @@
 
 </div>
 
+## Travel photo previews
+
+These previews open directly in the README without leaving the page. Select a photo to open it in the full gallery. The images are sample artwork; after replacing them with your own photos in the folders below, update the image paths in this section. On the live map, hover or tap a visited state to open its photo bubble.
+
+<details open>
+  <summary>☁️ California · 3 photo previews</summary>
+  <p align="center">
+    <a href="https://mikamikasuki.github.io/mika/travel/?state=CA&amp;photo=0"><img src="./docs/travel/photos/Pacific/CA/01-demo.svg" width="220" alt="Sample California travel photo preview 1" /></a>
+    <a href="https://mikamikasuki.github.io/mika/travel/?state=CA&amp;photo=1"><img src="./docs/travel/photos/Pacific/CA/02-demo.svg" width="220" alt="Sample California travel photo preview 2" /></a>
+    <a href="https://mikamikasuki.github.io/mika/travel/?state=CA&amp;photo=2"><img src="./docs/travel/photos/Pacific/CA/03-demo.svg" width="220" alt="Sample California travel photo preview 3" /></a>
+  </p>
+</details>
+
+<details open>
+  <summary>☁️ New Jersey · 2 photo previews</summary>
+  <p align="center">
+    <a href="https://mikamikasuki.github.io/mika/travel/?state=NJ&amp;photo=0"><img src="./docs/travel/photos/Eastern/NJ/01-demo.svg" width="220" alt="Sample New Jersey travel photo preview 1" /></a>
+    <a href="https://mikamikasuki.github.io/mika/travel/?state=NJ&amp;photo=1"><img src="./docs/travel/photos/Eastern/NJ/02-demo.svg" width="220" alt="Sample New Jersey travel photo preview 2" /></a>
+  </p>
+</details>
+
 ## Travel photo folders
 
 The colored states and photos are marked as demo content. Put photos in the matching timezone and state folder; a state with at least one image is added to the map automatically. Add an entry in `travel-data.json` when you want to customize its subtitle, places, or note.
