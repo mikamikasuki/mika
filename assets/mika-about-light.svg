@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="175" viewBox="0 0 1200 175" role="img" aria-labelledby="title desc">
+  <title id="title">About Mika</title>
+  <desc id="desc">Mika studies computer science at Rutgers, is spending a gap year in California, and plans to attend UT Austin on a full scholarship.</desc>
+  <defs>
+    <filter id="cloud-shadow" x="-25%" y="-35%" width="150%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="1.6" flood-color="#9c84d5" flood-opacity=".16" /></filter>
+  </defs>
+  <g transform="translate(26 39)" shape-rendering="crispEdges" filter="url(#cloud-shadow)">
+    <path fill="#aa9be7" d="M9 42H3V30H9V24H18V15H30V9H45V3H72V9H87V15H99V24H108V30H117V42H111V51H15V45H9Z" />
+    <path fill="#ded5fa" d="M15 39H12V30H21V21H33V15H48V9H69V15H84V21H96V30H105V39H99V45H18V42H15Z" />
+    <path fill="#fffafe" d="M21 36H18V30H27V24H39V18H51V15H69V18H81V24H93V30H99V36H93V42H24V39H21Z" />
+    <rect x="48" y="24" width="24" height="3" fill="#eee8ff" />
+    <rect x="-6" y="48" width="4" height="4" fill="#cbbcf3" opacity=".7" />
+    <rect x="122" y="42" width="3" height="3" fill="#ebc8df" opacity=".7" />
+  </g>
+  <g fill="#bb9ee5" opacity=".62" shape-rendering="crispEdges">
+    <rect x="174" y="34" width="4" height="4" /><rect x="1031" y="111" width="3" height="3" />
+  </g>
+  <g font-family="ui-rounded,system-ui,-apple-system,'Segoe UI',sans-serif" font-weight="800" text-anchor="middle">
+    <text x="625" y="52" fill="#b25e8d" font-size="22">🌷 CS undergraduate at Rutgers University, currently spending a one-year gap year in California.</text>
+    <text x="625" y="95" fill="#9675e3" font-size="21">Next year, I’ll be heading to UT Austin for a Master’s in Computer Science on a full scholarship.</text>
+    <text x="625" y="138" fill="#b25e8d" font-size="18">I hope to use both my technical skills and my token budget to give back to the open-source community. ♡</text>
+  </g>
+  <g transform="translate(1104 91) scale(.77)" shape-rendering="crispEdges" filter="url(#cloud-shadow)">
+    <path fill="#b3a2e9" d="M9 42H3V30H9V24H18V15H30V9H45V3H72V9H87V15H99V24H108V30H117V42H111V51H15V45H9Z" />
+    <path fill="#e6daf9" d="M15 39H12V30H21V21H33V15H48V9H69V15H84V21H96V30H105V39H99V45H18V42H15Z" />
+    <path fill="#fffafe" d="M21 36H18V30H27V24H39V18H51V15H69V18H81V24H93V30H99V36H93V42H24V39H21Z" />
+    <rect x="48" y="24" width="24" height="3" fill="#efe8ff" />
+    <rect x="122" y="42" width="3" height="3" fill="#edc7df" opacity=".7" />
+  </g>
+</svg>

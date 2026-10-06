@@ -1,0 +1,54 @@
+window.TRAVEL_DATA = {
+  "CA": {
+    "name": "California",
+    "timeZoneFolder": "Pacific",
+    "subtitle": "California demo album",
+    "places": [
+      "Add a city or place"
+    ],
+    "note": "Sample content — replace with your own travel details.",
+    "memories": [
+      {
+        "src": "./photos/Pacific/CA/01-demo.svg",
+        "alt": "Sample placeholder artwork for California; replace with your own photo",
+        "caption": "Sample artwork · replace with your photo",
+        "demo": true
+      },
+      {
+        "src": "./photos/Pacific/CA/02-demo.svg",
+        "alt": "Sample placeholder artwork for California; replace with your own photo",
+        "caption": "Sample artwork · replace with your photo",
+        "demo": true
+      },
+      {
+        "src": "./photos/Pacific/CA/03-demo.svg",
+        "alt": "Sample placeholder artwork for California; replace with your own photo",
+        "caption": "Sample artwork · replace with your photo",
+        "demo": true
+      }
+    ]
+  },
+  "NJ": {
+    "name": "New Jersey",
+    "timeZoneFolder": "Eastern",
+    "subtitle": "New Jersey demo album",
+    "places": [
+      "Add a city or place"
+    ],
+    "note": "Sample content — replace with your own travel details.",
+    "memories": [
+      {
+        "src": "./photos/Eastern/NJ/01-demo.svg",
+        "alt": "Sample placeholder artwork for New Jersey; replace with your own photo",
+        "caption": "Sample artwork · replace with your photo",
+        "demo": true
+      },
+      {
+        "src": "./photos/Eastern/NJ/02-demo.svg",
+        "alt": "Sample placeholder artwork for New Jersey; replace with your own photo",
+        "caption": "Sample artwork · replace with your photo",
+        "demo": true
+      }
+    ]
+  }
+};

@@ -1,0 +1,20 @@
+{
+  "name": "mika-profile-travel-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:travel": "node scripts/build-travel.mjs",
+    "generate": "node scripts/generate-profile.mjs",
+    "build": "npm run build:travel && npm run generate",
+    "check": "node --check scripts/build-travel.mjs && node --check scripts/generate-profile.mjs && node --check docs/travel/app.js"
+  },
+  "dependencies": {
+    "d3-geo": "3.1.1",
+    "topojson-client": "3.1.0",
+    "us-atlas": "3.0.1"
+  }
+}

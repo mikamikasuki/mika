@@ -1,0 +1,41 @@
+name: Update profile cards
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'profile.config.json'
+      - 'travel-data.json'
+      - 'scripts/**'
+      - 'docs/travel/photos/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/profile-cards.yml'
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_LOGIN: mikamikasuki
+      - name: Commit refreshed cards and travel data
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add assets/generated docs/assets/generated docs/travel/state-paths.json docs/travel/travel-data.json docs/travel/travel-data.js
+          git diff --cached --quiet || git commit -m "chore: refresh profile cards"
+          git push

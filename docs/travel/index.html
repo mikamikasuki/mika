@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff8fc" />
+  <title>Where I’ve been — Mika</title>
+  <meta name="description" content="Explore a pastel map and photo memories from Mika’s US travel demo." />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./travel-data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main class="travel-shell">
+    <header class="travel-header">
+      <a class="back-link" href="../">← Profile</a>
+      <p class="eyebrow">TRAVEL JOURNAL · UNITED STATES</p>
+      <h1>Where I’ve wandered <span>♡</span></h1>
+      <p class="intro">Hover or tap a colored state to peek at its photo stack. Select a photo to open the gallery.</p>
+      <p class="demo-label">DEMO CONTENT · CALIFORNIA + NEW JERSEY</p>
+    </header>
+
+    <section class="map-card" aria-label="Interactive map of the United States">
+      <div class="map-heading">
+        <div><span class="eyebrow">MY LITTLE TRAVEL MAP</span><h2>Places &amp; memories</h2></div>
+        <div class="map-count"><strong id="state-count">0 / 50</strong><span>demo states</span></div>
+      </div>
+      <div class="map-frame" id="map-frame">
+        <p class="map-loading" id="map-status" role="status">Loading the map…</p>
+        <svg id="us-map" viewBox="0 0 960 600" preserveAspectRatio="xMidYMid meet" role="group" aria-label="Map of the United States. Colored states have sample travel entries."></svg>
+        <aside class="photo-bubble" id="photo-bubble" aria-live="polite" hidden></aside>
+      </div>
+      <div class="map-legend">
+        <span><i class="legend-dot visited"></i> Sample entry</span>
+        <span><i class="legend-dot unvisited"></i> Add a state</span>
+        <span class="map-hint">Hover · click to pin · tap on mobile</span>
+      </div>
+    </section>
+
+    <section class="travel-note">
+      <span class="note-icon" aria-hidden="true">✿</span>
+      <div><h2>Make it yours</h2><p>Replace the demo illustrations with your own photos, then edit <code>travel-data.json</code> with each state’s places and notes.</p></div>
+    </section>
+    <footer><a href="https://github.com/mikamikasuki/mika">View this project on GitHub ↗</a></footer>
+  </main>
+
+  <div class="gallery" id="gallery" role="dialog" aria-modal="true" aria-label="Travel photo gallery" hidden>
+    <div class="gallery-backdrop" data-close-gallery></div>
+    <section class="gallery-panel">
+      <button class="gallery-close" type="button" aria-label="Close gallery" data-close-gallery>×</button>
+      <div class="gallery-content" id="gallery-content"></div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="title desc">
+  <title id="title">Hi, I’m Mika</title>
+  <desc id="desc">A lavender and pink banner with a softly glowing greeting and drifting waves.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#91a6e6" />
+      <stop offset=".52" stop-color="#a28ae7" />
+      <stop offset="1" stop-color="#c391e0" />
+    </linearGradient>
+    <linearGradient id="wave" x1="0" x2="1">
+      <stop stop-color="#f2d3f4" stop-opacity=".38" />
+      <stop offset=".55" stop-color="#f5c9e8" stop-opacity=".25" />
+      <stop offset="1" stop-color="#f7d9ed" stop-opacity=".58" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <clipPath id="banner-clip"><rect width="1200" height="170" rx="28" /></clipPath>
+  </defs>
+  <g clip-path="url(#banner-clip)">
+    <rect width="1200" height="170" fill="url(#sky)" />
+    <circle cx="188" cy="30" r="72" fill="#fff" opacity=".055">
+      <animate attributeName="cy" values="25;42;25" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1010" cy="35" r="92" fill="#f8dfff" opacity=".08">
+      <animate attributeName="cx" values="970;1030;970" dur="9s" repeatCount="indefinite" />
+    </circle>
+    <path d="M-40 116 C145 94 322 150 522 118 S915 87 1240 119 V182 H-40Z" fill="#e0c6f3" opacity=".30">
+      <animateTransform attributeName="transform" type="translate" values="-20 0;20 0;-20 0" dur="11s" repeatCount="indefinite" />
+    </path>
+    <path d="M-30 134 C190 163 374 111 596 136 S966 166 1230 135 V182 H-30Z" fill="url(#wave)">
+      <animateTransform attributeName="transform" type="translate" values="18 0;-18 0;18 0" dur="13s" repeatCount="indefinite" />
+    </path>
+    <g fill="#fff" opacity=".7">
+      <circle cx="105" cy="44" r="2.5"><animate attributeName="opacity" values=".2;.9;.2" dur="2.8s" repeatCount="indefinite" /></circle>
+      <circle cx="1090" cy="60" r="3"><animate attributeName="opacity" values=".2;.9;.2" dur="3.4s" repeatCount="indefinite" /></circle>
+    </g>
+    <text x="600" y="100" text-anchor="middle" fill="#fff" filter="url(#glow)" font-family="ui-rounded,system-ui,-apple-system,'Segoe UI',sans-serif" font-size="46" font-weight="800">Hi, I’m Mika <tspan font-size="39">🌷</tspan></text>
+  </g>
+</svg>

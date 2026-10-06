@@ -1,0 +1,18 @@
+{
+  "states": {
+    "CA": {
+      "name": "California",
+      "timeZoneFolder": "Pacific",
+      "subtitle": "California demo album",
+      "places": ["Add a city or place"],
+      "note": "Sample content — replace with your own travel details."
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "timeZoneFolder": "Eastern",
+      "subtitle": "New Jersey demo album",
+      "places": ["Add a city or place"],
+      "note": "Sample content — replace with your own travel details."
+    }
+  }
+}

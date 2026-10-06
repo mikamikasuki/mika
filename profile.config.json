@@ -1,0 +1,35 @@
+{
+  "login": "mikamikasuki",
+  "displayName": "Mika",
+  "profileGrade": "B+",
+  "sampleMetrics": {
+    "stars": 79,
+    "commits": 63,
+    "pullRequests": 202,
+    "issues": 26,
+    "repositories": 134,
+    "contributions": 394,
+    "currentStreak": 7,
+    "longestStreak": 7
+  },
+  "cardTheme": {
+    "light": {
+      "background": "#fff7fb",
+      "foreground": "#625b70",
+      "muted": "#8f8495",
+      "accent": "#a37be3",
+      "pink": "#bf6f9e",
+      "stroke": "#f0e1ed",
+      "unvisited": "#e7e3eb"
+    },
+    "dark": {
+      "background": "#1d1924",
+      "foreground": "#eee8f2",
+      "muted": "#b6aabc",
+      "accent": "#bea3ff",
+      "pink": "#e89ac2",
+      "stroke": "#42364a",
+      "unvisited": "#36303b"
+    }
+  }
+}
