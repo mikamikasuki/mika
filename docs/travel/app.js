@@ -188,7 +188,7 @@
 
   const loadMap = async () => {
     try {
-      const response = await fetch('./state-paths.json');
+      const response = await fetch('./state-paths.json?v=2');
       if (!response.ok) throw new Error(`Map data returned ${response.status}`);
       const states = await response.json();
       svg.innerHTML = states.map(state => `<path d="${state.path}" />`).join('');
